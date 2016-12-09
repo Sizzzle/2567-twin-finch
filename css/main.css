@@ -86,6 +86,13 @@ img {
 	max-width: 100%;	
 }
 
+#hero { 
+  background-color: goldenrod;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 /*--------------------------------------------------------------
 4.0 - typography
 -------------------------------------------------------------- */
