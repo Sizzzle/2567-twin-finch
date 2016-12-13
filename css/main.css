@@ -66,17 +66,22 @@
 2.0 - color
 -------------------------------------------------------------- */
 
-.lt-grey {
-	background-color: #e1e1e1;
+.gold {
+	background-color: #ffcc33;;
 }
 
-.mid-grey {
-	background-color: #949494;
+.lt-grn {
+	background-color: #66cc99;
 }
 
-.drk-grey {
-	background-color: #808080;
+.drk-grn {
+	background-color: #339999;
 }
+
+.grey {
+	color: #cccccc;
+}
+
 
 /*--------------------------------------------------------------
 3.0 - media
@@ -93,6 +98,15 @@ img {
   -o-background-size: cover;
   background-size: cover;
 }
+
+#beans {
+	background: url(../img/coffee-beans.jpg) no-repeat center center; 
+}
+
+#bags {
+	background: url(../img/bags.jpg) no-repeat center center; 
+}
+
 /*--------------------------------------------------------------
 4.0 - typography
 -------------------------------------------------------------- */
