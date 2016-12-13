@@ -82,7 +82,13 @@
 	color: #cccccc;
 }
 
-
+#top {
+	background-color: #ffcc33;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 /*--------------------------------------------------------------
 3.0 - media
 -------------------------------------------------------------- */
@@ -101,18 +107,32 @@ img {
 
 #beans {
 	background: url(../img/coffee-beans.jpg) no-repeat center center; 
+	background-size:cover;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+	background-position: top;
 }
 
 #bags {
 	background: url(../img/bags.jpg) no-repeat center center; 
+	background-size:cover;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 /*--------------------------------------------------------------
 4.0 - typography
 -------------------------------------------------------------- */
 
-nav, h1, h2, h3, li { color: #ffffff;
+nav ul li a, blockquote, h1, h2, h3, h1 a, p a { 
+	color: #ffffff;
 	font-family: 'Bitter', serif;
+}
+
+p a hover {
+	
 }
 
 h1, h2, h3, h4, h5, p, form {
