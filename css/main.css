@@ -345,37 +345,6 @@ placeholder {
     padding-bottom: 1rem;
 }
 
-.f-r
-{
-	float:right;
-}
-
-.f-l
-{
-	float:left;
-}
-
-.push-right
-{
-	float:right!important;
-}
-
-.push-left
-{
-	float:left!important;
-}
-
-.center
-{
-	text-align:center;
-}
-
-.cntr
-{
-	align-content:center;
-}
-
-
 /*--------------------------------------------------------------
 6.0 - media queries
 -------------------------------------------------------------- */
