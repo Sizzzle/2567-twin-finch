@@ -20,7 +20,7 @@
 
 .wrapper {
 	margin: 0 auto;
-	width: 90%
+	width: 95%
 }
 
 .row:after {
@@ -126,7 +126,7 @@ img {
 4.0 - typography
 -------------------------------------------------------------- */
 
-nav ul li a, blockquote, h1, h2, h3, h1 a, p a { 
+nav ul li a, blockquote, h1, h2, h3, h1 a, p a, form { 
 	color: #ffffff;
 	font-family: 'Bitter', serif;
 }
@@ -135,32 +135,92 @@ p a hover {
 	
 }
 
-h1, h2, h3, h4, h5, p, form {
+h1, h2, h3, h4, h5, p, blockquote, nav ul li a, form {
 	text-align: center;
 }
 
-btn, h4, h5, p {
+h4, h5, p {
 	color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
 }
-
-ul {
+nav ul {
 	text-align: right;
 	list-style-type: none;	
 	float: right;
     width: 100%;
-    padding: 0;
+    padding-top: 20px;
+	padding-right: 20px;
     margin :0;
 }
 
-li {
+nav li {
 	display: inline;
+}
+
+nav li a, h1 a, p a {
+text-decoration: none;	
 }
 
 .bold {
 	font-weight: bold;
 }
+/*--------------------------------------------------------------
+Buttons
+-------------------------------------------------------------- */
+#bg-btn a {
+-moz-border-radius:.75rem;
+		-ms-border-radius:.75rem;
+		-o-border-radius:.75rem;
+		-webkit-border-radius:.75rem;
+		align-content:center;
+		background-color:#66cc99;
+		border:solid;
+		border-color: transparent;
+		border-radius:.75rem;
+		color:#FFF;
+		display:inline-block;
+		font-size: 2.25rem;
+		padding-left:1.75rem;
+		padding-right:1.75rem;
+		padding-top: .4rem;
+	padding-bottom: .4rem;
+		text-align:center;
+		text-decoration:none;
+		text-transform:uppercase;
+	margin-bottom: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
 
+#bg-btn a:hover {
+		background-color: #339999;
+}
+
+.btn a {
+	-moz-border-radius:.75rem;
+		-ms-border-radius:.75rem;
+		-o-border-radius:.75rem;
+		-webkit-border-radius:.75rem;
+		align-content:center;
+		background-color:#66cc99;
+		border:solid;
+		border-color: transparent;
+		border-radius:.75rem;
+		color:#FFF;
+		display:inline-block;
+		font-size: 1rem;
+		padding-left: .8rem;
+		padding-right:.8rem;
+		padding-top: .12rem;
+	padding-bottom: .12rem;
+		text-align:center;
+		text-decoration:none;
+		text-transform:uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.btn a:hover {
+	background-color: #339999;
+}
 /*--------------------------------------------------------------
 5.0 - Structure
 -------------------------------------------------------------- */
@@ -201,10 +261,3 @@ li {
 	}
 	
 }
-
-/*iphone size
-@media (max-width: 320px) { 
-	.wrapper {
-		width: 95%;	
-	}
-}*/
