@@ -1,203 +1,24 @@
 @charset "UTF-8";
 /* CSS Document */
-/* ====== TABLE OF CONTENTS ======
-1.0 - columns
-2.0 - colors
-3.0 - media
-4.0 - typography
-5.0 - structure
-6.0 - media queries
-================================ */
 
-*,:after,:before
-{
-	-moz-box-sizing:border-box;
-	-ms-box-sizing:border-box;
-	-o-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	box-sizing:border-box;
-}
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Typography
+2.0 - Buttons
+3.0 - Forms
+4.0 - Navigation
+5.0 - Site Structure
+6.0 - Columns
+7.0 - Media
+8.0 - Colors
+9.0 - Small Display
+--------------------------------------------------------------*/
 
-.wrapper
-{
-	margin:0 auto;
-	width:90%;
-}
 
-.row:after
-{
-	clear:both;
-	content:"";
-	display:table;
-	overflow:auto;
-}
-
-[class*=col-]
-{
-	float:left;
-	margin-bottom:20px;
-	padding-right:20px;
-}
-
-[class*=col-]:last-of-type
-{
-	padding-right:0;
-}
-
-.col-1-2
-{
-	width:50%;
-}
-
-.col-1-4
-{
-	width:25%;
-}
-
-.col-1-3
-{
-	width:33.33%;
-}
-
-.col-1-8
-{
-	width:12.5%;
-}
-
-.col-5-9
-{
-	width:55.56%;
-}
-
-.col-2-3
-{
-	width:66.66%;
-}
-
-.col-9-11
-{
-	width:81.82%;
-}
-
-.gold
-{
-	background-color:#fc3;
-	width:100%;
-}
-
-.lt-grn
-{
-	background-color:#6c9;
-	width:100%;
-}
-
-.drk-grn
-{
-	background-color:#399;
-	width:100%;
-}
-
-.grey,input
-{
-	color:#ccc;
-}
-
-#top
-{
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	-webkit-background-size:cover;
-	background-color:#fc3;
-	background-size:cover;
-	padding-bottom:2rem;
-	width:100%;
-}
-
-img
-{
-	max-width:100%;
-}
-
-#hero
-{
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	-webkit-background-size:cover;
-	background-color:#DAA520;
-	background-size:cover;
-	width:100%;
-}
-
-#beans
-{
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	-webkit-background-size:cover;
-	background:url(../img/coffee-beans.jpg) no-repeat center center;
-	background-position:top;
-	background-size:cover;
-	padding-top:50px;
-	width:100%;
-}
-
-#products
-{
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	-webkit-background-size:cover;
-	background:url(../img/bags.jpg) no-repeat center center;
-	background-position:top;
-	background-size:cover;
-	padding-top:10px;
-	width:100%;
-}
-
-#facebook,#twitter,#google
-{
-	height:40px;
-	width:40px;
-}
-
-#facebook:hover,#twitter:hover,#google:hover
-{
-	background-position:0 -40px;
-}
-
-footer .col-1-4:last-child ul li:first-child a
-{
-	background:url(../img/fb.png) no-repeat;
-}
-
-footer .col-1-4:last-child ul li:nth-child(2) a
-{
-	background:url(../img/twitter.png) no-repeat;
-}
-
-footer .col-1-4:last-child ul li:last-child a
-{
-	background:url(../img/gplus.png) no-repeat;
-}
-
-footer .col-1-4:last-child ul li:first-child a,footer .col-1-4:last-child ul li:nth-child(2) a,footer .col-1-4:last-child ul li:last-child a
-{
-	display:inline-block;
-	height:50px;
-	width:50px;
-}
-
-footer li
-{
-	display:inline-block;
-	font-weight:100;
-	text-align:right;
-	text-decoration:none;
-}
-
-footer a:hover
-{
-	background-position:0 -35px;
-}
-
+/*--------------------------------------------------------------
+1.0 - TYPOGRAPHY
+--------------------------------------------------------------*/
 nav ul li a,blockquote,h2,h3,h1 a,p a
 {
 	color:#fff;
@@ -281,37 +102,9 @@ blockquote p a
 	font-weight:500;
 }
 
-nav ul
-{
-	list-style-type:none;
-	padding-right:.25rem;
-	padding-top:5rem;
-}
-
-nav li
-{
-	display:inline;
-	font-size:1.28rem;
-	font-weight:700;
-	padding-right:3rem;
-	text-align:right;
-}
-
-nav
-{
-	float:right;
-}
-
-nav li a,h1 a,p a
-{
-	text-decoration:none;
-}
-
-nav li a:hover
-{
-	text-decoration:underline;
-}
-
+/*--------------------------------------------------------------
+2.0 - Buttons
+--------------------------------------------------------------*/
 #products .col-1-2 .highlight p
 {
 	font-size:1.25rem;
@@ -354,6 +147,37 @@ nav li a:hover
 	padding:.12rem .8rem;
 }
 
+#newsletter .submit {
+	background-color: #399;
+	color: #fff;
+}
+
+#newsletter .submit:hover {
+	background-color: #fff;
+	color: #399;
+}
+
+/*--------------------------------------------------------------
+3.0- Forms
+--------------------------------------------------------------*/
+#newsletter label {
+	font-size: 1.5rem;
+}
+#newsletter input  {
+	padding-top: 15px;
+	text-transform: uppercase;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-top: 7px;
+	font-size: .9rem;
+	border: solid;
+	border-radius:.75rem;
+}
+#newsletter form input {
+	background-color: #fff;
+}
+
+
 #newsletter
 {
 	background-color:#6c9;
@@ -365,6 +189,130 @@ nav li a:hover
 	text-transform:uppercase;
 	width:100%;
 }
+
+label
+{
+	padding-bottom:.1rem;
+}
+
+input
+{
+	padding-bottom:1rem;
+}
+
+placeholder
+{
+	padding-bottom:1rem;
+}
+/*--------------------------------------------------------------
+4.0 - NAVIGATION MENU
+--------------------------------------------------------------*/
+footer .col-1-4:last-child ul li:first-child a
+{
+	background:url(../img/fb.png) no-repeat;
+}
+
+footer .col-1-4:last-child ul li:nth-child(2) a
+{
+	background:url(../img/twitter.png) no-repeat;
+}
+
+footer .col-1-4:last-child ul li:last-child a
+{
+	background:url(../img/gplus.png) no-repeat;
+}
+
+footer .col-1-4:last-child ul li:first-child a,footer .col-1-4:last-child ul li:nth-child(2) a,footer .col-1-4:last-child ul li:last-child a
+{
+	display:inline-block;
+	height:50px;
+	width:50px;
+}
+
+footer li
+{
+	display:inline-block;
+	font-weight:100;
+	text-align:right;
+	text-decoration:none;
+}
+
+footer a:hover
+{
+	background-position:0 -35px;
+}
+
+
+nav ul
+{
+	list-style-type:none;
+	padding-right:.25rem;
+	padding-top:5rem;
+}
+
+nav li
+{
+	display:inline;
+	font-size:1.28rem;
+	font-weight:700;
+	padding-right:3rem;
+	text-align:right;
+}
+
+nav
+{
+	float:right;
+}
+
+nav li a,h1 a,p a
+{
+	text-decoration:none;
+}
+
+nav li a:hover
+{
+	text-decoration:underline;
+}
+
+/*--------------------------------------------------------------
+5.0 - Site Structure
+--------------------------------------------------------------*/
+
+*,:after,:before
+{
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.wrapper
+{
+	margin:0 auto;
+	width:90%;
+}
+
+.row:after
+{
+	clear:both;
+	content:"";
+	display:table;
+	overflow:auto;
+}
+
+[class*='col-']
+{
+	float:left;
+	margin-bottom:20px;
+	padding-right:20px;
+}
+
+[class*='col-']:last-of-type
+{
+	padding-right:0;
+}
+
 
 .f-r
 {
@@ -391,35 +339,168 @@ nav li a:hover
 	text-align:center;
 }
 
-label
-{
-	padding-bottom:.1rem;
-}
-
-input
-{
-	padding-bottom:1rem;
-}
-
-placeholder
-{
-	padding-bottom:1rem;
-}
-
 #about
 {
 	padding-top:10px;
 }
 
+/*--------------------------------------------------------------
+6.0 - Columns
+--------------------------------------------------------------*/
+.col-1-2
+{
+	width:50%;
+}
+
+.col-1-4
+{
+	width:25%;
+}
+
+.col-1-3
+{
+	width:33.33%;
+}
+
+.col-1-8
+{
+	width:12.5%;
+}
+
+.col-5-9
+{
+	width:55.56%;
+}
+
+.col-2-3
+{
+	width:66.66%;
+}
+
+.col-9-11
+{
+	width:81.82%;
+}
+
+/*---------------------------------------------------------------
+7.0 - Media
+---------------------------------------------------------------*/
+#top
+{
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-webkit-background-size:cover;
+	background-color:#fc3;
+	background-size:cover;
+	padding-bottom:2rem;
+	width:100%;
+}
+
+img
+{
+	max-width:100%;
+}
+
+#hero
+{
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-webkit-background-size:cover;
+	background-color:#DAA520;
+	background-size:cover;
+	width:100%;
+}
+
+#beans
+{
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-webkit-background-size:cover;
+	background:url(../img/coffee-beans.jpg) no-repeat center center;
+	background-position:top;
+	background-size:cover;
+	padding-top:50px;
+	width:100%;
+}
+
+#products
+{
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-webkit-background-size:cover;
+	background:url(../img/bags.jpg) no-repeat center center;
+	background-position:top;
+	background-size:cover;
+	padding-top:10px;
+	width:100%;
+}
+
+#location .col-5-9 {
+	float: right;
+	margin-right: 110px;
+}
+
+#facebook,#twitter,#google
+{
+	height:40px;
+	width:40px;
+}
+
+#facebook:hover,#twitter:hover,#google:hover
+{
+	background-position:0 -40px;
+}
+
+/*---------------------------------------------------------------
+8.0 - Colors
+---------------------------------------------------------------*/
+.gold
+{
+	background-color:#fc3;
+	width: 100%;
+	
+}
+
+.lt-grn
+{
+	background-color:#6c9;
+	
+}
+
+.drk-grn
+{
+	background-color:#399;
+	
+}
+
+.grey,input
+{
+	color:#ccc;
+}
+
+/*---------------------------------------------------------------
+9.0 - Media Querey
+---------------------------------------------------------------*/
 @media (max-width:480px) {
-	.wrapper
-	{
-		width:100;
-	}
 	
 	.col-1-2,.col-1-3,.col-5-9
 	{
 		width:100%;
+	}
+	
+	.col-1-8
+	{
+		width:25%;
+	}
+	
+	.col-2-3
+	{
+		width:90%;
+	}
+	
+	.col-9-11
+	{
+		width:85%;
 	}
 	
 	#beans p
@@ -457,10 +538,11 @@ placeholder
 	#top p {
 		padding-left:45px;
 	}
-	footer .col-1-3
-	{
-		width:30%;
-	}
+	
+	#location .col-5-9 {
+	float: none;
+	margin-right: 0px;
+}
 	
 	nav {
 		margin-right: 15px;
@@ -471,21 +553,6 @@ placeholder
 		width: 100%;
 	}
 	
-	
-	.col-1-8
-	{
-		width:25%;
-	}
-	
-	.col-2-3
-	{
-		width:90%;
-	}
-	
-	.col-9-11
-	{
-		width:85%;
-	}
 	
 	blockquote
 	{
@@ -503,7 +570,7 @@ placeholder
 		text-align:center;
 	}
 	
-	p,h4
+	p
 	{
 		font-size:1.25rem;
 	}
