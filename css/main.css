@@ -97,7 +97,7 @@
 	width:100%;
 }
 
-.grey
+.grey, input
 {
 	color:#ccc;
 }
@@ -178,12 +178,17 @@ h2,h3,p,blockquote,ul li a,form,input,label,textarea
 	text-align:center;
 }
 
-blockquote {
+h2 {
 	font-size: 2.5rem;
-	line-height: 2.8rem;
 }
 
-p,form
+blockquote {
+	font-size: 2.5rem;
+	line-height: 2.9rem;
+	font-weight: 700;
+}
+
+p,form, #location p a
 {
 	color:#fff;
 	font-family:'Open Sans', sans-serif;
@@ -191,24 +196,28 @@ p,form
 
 h2 a
 {
-	font-size:1.8rem;
 	text-decoration:none;
 }
 
-.lt-grn h4
+#newsletter h2
 {
-	font-weight:700;
+	font-weight:500;
 	font-size: 1.5rem;
 }
 
-#about p a:hover
+#about p a:hover, #location p a:hover
 {
-	color:#ccc;
+	color:#339999;
 }
 
 #about p a
 {
 	text-decoration:underline;
+	font-size:1.5rem;
+}
+
+#brew {
+	padding-bottom: 50px;
 }
 
 h4 span
@@ -216,27 +225,27 @@ h4 span
 	font-weight:700;
 }
 
-p a
-{
-	font-size:1.5rem;
+span {
+	font-weight: 700
 }
 
 p a:hover
 {
-	color:#ccc;
+	color:#fff;
 	text-decoration:underline;
 }
 
-input,h2 a:hover
-{
-	color:#ccc;
+blockquote p a {
+	font-size: 2rem;
+	font-weight: 500;
 }
+
 
 nav ul
 {
 	list-style-type:none;
 	padding-right:.25rem;
-	padding-top:.25rem;
+	padding-top:5rem;
 }
 
 nav li
@@ -245,6 +254,7 @@ nav li
 	font-size:1.28rem;
 	padding-right:3rem;
 	text-align:right;
+	font-weight: 700;
 }
 
 nav
@@ -260,6 +270,14 @@ nav li a,h1 a,p a
 nav li a:hover
 {
 	text-decoration:underline;
+}
+
+#products .col-1-2 .highlight p {
+	font-size: 1.25rem;
+}
+
+#products .col-1-3 .highlight p {
+	font-size: 1.2rem;
 }
 
 /*--------------------------------------------------------------
@@ -389,11 +407,6 @@ width: 90%;
 p, h1, h2, h3, h4, figure, img, form, ul li {
 	text-align: center;
 }
-    h2,
-    h3 {
-        font-size: 1.1rem;
-    }
-	
 	p, h4 {
 		font-size: 1.25rem;
 	}
