@@ -350,9 +350,16 @@ placeholder {
         width: 95%;
     }
 	
-	.col-1-2, .col-1-3 .col-5-9 {
+	.col-1-2, .col-1-3, .col-5-9 {
     width: 100%;
 }
+	#beans p {
+		font-size: 1.25rem;
+	}
+	
+	#beans h3 {
+		font-size: 1.5rem;
+	}
 	footer .col-1-3 {
 		width: 30%;
 	}
