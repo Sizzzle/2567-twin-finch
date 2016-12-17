@@ -262,7 +262,7 @@ nav li a:hover
 /*--------------------------------------------------------------
 Buttons
 -------------------------------------------------------------- */
-#bg-btn a
+#bg-btn a, .btn a
 {
 	-moz-border-radius:.75rem;
 	-ms-border-radius:.75rem;
@@ -283,36 +283,18 @@ Buttons
 	text-transform:uppercase;
 }
 
-#bg-btn a:hover
+#bg-btn a:hover, .btn a:hover
 {
 	background-color:#399;
 }
 
 .btn a
 {
-	-moz-border-radius:.75rem;
-	-ms-border-radius:.75rem;
-	-o-border-radius:.75rem;
-	-webkit-border-radius:.75rem;
-	align-content:center;
-	background-color:#6c9;
-	border:solid;
-	border-color:transparent;
-	border-radius:.75rem;
-	color:#FFF;
-	display:inline-block;
-	font-family:'Open Sans', sans-serif;
+	
 	font-size:1rem;
 	padding:.12rem .8rem;
-	text-align:center;
-	text-decoration:none;
-	text-transform:uppercase;
 }
 
-.btn a:hover
-{
-	background-color:#399;
-}
 /*--------------------------------------------------------------
 5.0 - Structure
 -------------------------------------------------------------- */
@@ -354,7 +336,7 @@ placeholder {
         width: 95%;
     }
 	
-	.col-1-2, .col-1-3  {
+	.col-1-2, .col-1-3 .col-5-9 {
     width: 100%;
 }
 	footer .col-1-3 {
@@ -363,12 +345,10 @@ placeholder {
 .col-1-8 {
     width: 25%;
 }
-	.col-5-9 {
-    width: 100%;
-}
+	
 
 	.col-2-3 {
-width: 95%;
+width: 90%;
 	}
 .col-9-11 {
     width: 85%
